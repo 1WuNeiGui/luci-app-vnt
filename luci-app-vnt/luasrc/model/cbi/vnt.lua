@@ -115,8 +115,8 @@ desvice_name.placeholder = device_name
 desvice_name.default = device_name
 
 tunname = s:taboption("privacy",Value, "tunname", translate("虚拟网卡名称"),
-	translate("自定义虚拟网卡的名称，在多开时虚拟网卡名称不能相同，默认为 vnt-tun"))
-tunname.placeholder = "vnt-tun"
+	translate("自定义虚拟网卡的名称，在多开时虚拟网卡名称不能相同，默认为 tun0"))
+tunname.placeholder = "tun0"
 
 relay = s:taboption("privacy",ListValue, "relay", translate("传输模式"),
 	translate("自动:根据当前网络环境，自动选择由服务器或客户端转发还是客户端之间直连<br>转发:仅中继转发，会禁止打洞/p2p直连，只使用服务器或客户端转发<br>p2p:仅直连模式，会禁止网络数据从服务器/客户端转发，只会使用服务器转发控制包<br>在网络环境很差时，不使用p2p只使用服务器中继转发效果可能更好（可以配合服务器的tcp协议一起使用）<br>tcp直连需要指定监听port，且防火墙需要放行第一个端口，才有几率tcp-p2p"))
