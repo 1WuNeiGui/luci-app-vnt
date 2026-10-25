@@ -63,7 +63,7 @@ start_vntcli() {
        			[ -z "$tag" ] && tag="$( curl -k --connect-timeout 3 --user-agent "$user_agent" -s  https://api.github.com/repos/vnt-dev/vnt/releases/latest  2>&1 | grep 'tag_name' | cut -d\" -f4 )"
        			[ -z "$tag" ] && tag="$( curl -Lk --connect-timeout 5 --user-agent "$user_agent" -s  https://dl.cnqq.cloudns.ch/https://api.github.com/repos/vnt-dev/vnt/releases/latest  2>&1 | grep 'tag_name' | cut -d\" -f4 )"
    		fi
-		[ -z "$tag" ] && tag="v1.2.16"
+		[ -z "$tag" ] && tag="v1.2.17"
 		case "${cpucore}" in 
              		"mipsle") url="mipsel-unknown-linux-musl"
 	     		;;
