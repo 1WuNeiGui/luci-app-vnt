@@ -256,7 +256,7 @@ EOF
 		procd_close_instance
 
                 if [ -z "$tunname" ] ; then
-                   vnt_tun="vnt-tun"
+                   vnt_tun="tun0"
                 else
                    vnt_tun="$tunname"
                 fi 
